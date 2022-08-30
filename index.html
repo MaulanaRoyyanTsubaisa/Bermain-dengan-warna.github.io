@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing With Colors</title>
+
+    <style>
+        html, body {
+            max-height: 100%;
+            max-width: 100%;
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        
+        .kotak {
+            border-radius: 10px;
+            height:75px;
+            width:75px;
+            margin: 10px auto;  
+        }
+
+        .merah { background-color: red; }
+        .hijau { background-color: green; }
+        .biru { background-color: blue; }
+        .warna1 { background-color: lightgreen; }
+
+        .mouse {
+            display: inline-block;
+            max-height: 400px;
+            max-width: 800px;
+            border: 2px solid black;
+            padding: 80px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h1>Bermain Dengan Warna</h1>
+    <p>Disarankan Membuka Dengan PC/ Laptop/ Desktop</p>
+    <button type="button" id="tombolUbahWarna" > Ubah Warna </button>
+
+
+    <div class="kotak merah"></div>
+    <input type="range" name="slideMerah" id="sMerah" min="0" max="255">
+
+    <div class="kotak hijau"></div>
+    <input type="range" name="slideHijau" id="sHijau" min="0" max="255">
+
+    <div class="kotak biru"></div>
+    <input type="range" name="slideBiru" id="sBiru" min="0" max="255">
+
+    <div>
+        <div class="mouse" id="gMouse">
+            <p> Geserkan Mouse Disini Untuk Mengubah Warna Sesuai Dengan Posisi Kursor Mouse atau Tap Untuk Handpone </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
